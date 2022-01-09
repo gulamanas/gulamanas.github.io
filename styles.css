@@ -135,8 +135,24 @@ body {
 .profile_pic {
     display: none;
 }
-.profile_pic img {
+.profile_pic_img {
     width: 100%;
+    border-radius: 50%;
+}
+@media screen and (min-width: 900px) {
+    .main {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .main_content {
+        text-align: left;
+    }
+    .main_content h1 {
+        font-size: 40px;
+    }
+    .profile_pic {
+        display: block;
+    }
 }
 
 /* ################ Hero Section ################## */
