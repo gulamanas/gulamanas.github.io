@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* ################ Nav Bar ################## */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+}
+.brand {
+    font-weight: 700;
+    font-size: 28px;
+}
+.nav_list ul {
+    display: flex;
+    list-style: none;
+}
+.nav_list ul li {
+    padding: 10px 20px;
+}
+.nav_list ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+.nav_list ul li a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+.nav_list ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_list {
+        position: fixed;
+        top: 8vh;
+        left: 0;
+        width: 100%;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: 0.3s;
+        background: #fff;
+    }
+    .nav_list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav_list ul li {
+        margin: 10px 0;
+    }
+    .burger {
+        cursor: pointer;
+        padding: 3px;
+        border: 2px solid transparent;
+        transition: 0.2s;
+        border-radius: 5px;
+    }
+    .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background: #000;
+        transition: 0.2s;
+        border-radius: 20px;
+    }
+}
+
+.nav_slider {
+    transform: scaleY(1);
+}
+.switch {
+    border: 2px solid #ccc;
+}
+/* ################ Nav Bar ################## */
+/* ################ Hero Section ################## */
+.main {
+    margin-top: 8vh;
+    background: url(./images/5.jpg);
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+.main_content {
+    text-align: center;
+}
+.main_content h1 span {
+    color: #0087ca;
+}
+.btn_primary {
+    font-family: "Poppins", sans-serif;
+    background: #117db3;
+    padding: 10px 20px;
+    margin-top: 2vh;
+    border: 1px solid #117db3;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.3s ease-out;
+}
+.btn_primary:hover {
+    cursor: pointer;
+    color: #117db3;
+    background: transparent;
+}
+.profile_pic {
+    display: none;
+}
+.profile_pic img {
+    width: 100%;
+}
+
+/* ################ Hero Section ################## */
+/* ################ About Section ################## */
+.about {
+    font-size: 70px;
+    text-align: center;
+}
+/* ################ About Section ################## */
