@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -165,13 +166,30 @@ body {
 
 /* ################ Tech & Tools Section ################## */
 .tech_content {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
 }
 .tech_content img {
-    width: 96px;
+    width: 50px;
     margin: 10px;
+}
+.html_icon {
+    cursor: pointer;
+}
+@media screen and (min-width: 560px) {
+    .tech_content {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .tech_content img {
+        width: 70px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .tech_content img {
+        width: 96px;
+    }
 }
 /* ################ Tech & Tools Section ################## */
 
