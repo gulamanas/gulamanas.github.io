@@ -20,9 +20,8 @@ body {
     z-index: 10;
     background: #fff;
 }
-.brand {
-    font-weight: 700;
-    font-size: 28px;
+.brand img {
+    width: 40px;
 }
 .nav_list ul {
     display: flex;
@@ -131,6 +130,7 @@ body {
     cursor: pointer;
     color: #117db3;
     background: transparent;
+    font-weight: 600;
 }
 .profile_pic {
     display: none;
@@ -164,8 +164,14 @@ body {
 /* ################ About Section ################## */
 
 /* ################ Tech & Tools Section ################## */
-.tech_tools i {
-    font-size: 200px;
+.tech_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech_content img {
+    width: 96px;
+    margin: 10px;
 }
 /* ################ Tech & Tools Section ################## */
 
