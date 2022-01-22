@@ -219,10 +219,13 @@ h2 {
 /* ################ Tech & Tools Section ################## */
 
 /* ################ Projects Section ################## */
+.project_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .cards {
     margin: 20px;
     border: 2px solid black;
-    /* border-radius: 6px; */
 }
 .card_img {
     padding: 20px;
@@ -233,13 +236,26 @@ h2 {
 .card_element {
     padding: 0 20px 20px;
 }
+.card_element_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_element_heading a {
+    color: var(--dark);
+}
+.card_element_heading i {
+    font-size: 24px;
+    margin-left: 15px;
+}
 .card_element p:nth-child(1) {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 .card_element p:nth-child(2) {
     text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
 }
 .card_element ul {
     display: flex;
@@ -247,6 +263,16 @@ h2 {
     margin-top: 15px;
 }
 .card_element ul li {
-    margin-right: 10px;
+    margin-right: 20px;
+}
+@media screen and (min-width: 600px) {
+    .project_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .project_wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 /* ################ Projects Section ################## */
