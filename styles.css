@@ -422,6 +422,21 @@ h2 {
     padding: 10px;
     color: var(--dark);
 }
+.fa-facebook-f {
+    color: #4064ac;
+}
+.fa-instagram {
+    font-weight: 600;
+    background: -webkit-linear-gradient(45deg, #bc2a8d 0%, #fccc63 60%, #fbad50 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-twitter {
+    color: #1da1f2;
+}
+.fa-linkedin {
+    color: #2868b2;
+}
 
 /* ################ Socials Section ################## */
 
