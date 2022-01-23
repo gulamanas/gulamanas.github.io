@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 :root {
     --dark: #131d32;
@@ -34,6 +33,7 @@ h2 {
     left: 0;
     z-index: 10;
     background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .brand img {
     width: 40px;
@@ -100,8 +100,8 @@ h2 {
         border-radius: 5px;
     }
     .bar {
-        width: 25px;
-        height: 3px;
+        width: 30px;
+        height: 5px;
         margin: 5px;
         background: var(--dark);
         transition: 0.2s;
@@ -113,13 +113,13 @@ h2 {
     transform: scaleY(1);
 }
 .switch .bar1 {
-    transform: rotate(45deg) translate(5px, 6px);
+    transform: rotate(45deg) translate(6px, 8px);
 }
 .switch .bar2 {
     opacity: 0;
 }
 .switch .bar3 {
-    transform: rotate(-45deg) translate(5px, -6px);
+    transform: rotate(-45deg) translate(6px, -8px);
 }
 /* ################ Nav Bar ################## */
 /* ################ Hero Section ################## */
@@ -148,7 +148,7 @@ h2 {
     border-radius: 30px;
     font-size: 16px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
     transition: 0.3s ease-out;
 }
@@ -156,7 +156,7 @@ h2 {
     cursor: pointer;
     color: #117db3;
     background: transparent;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .profile_pic {
     display: none;
@@ -184,13 +184,51 @@ h2 {
 /* ################ Hero Section ################## */
 /* ################ About Section ################## */
 .about {
-    font-size: 70px;
-    text-align: center;
+    margin-top: 10vh;
+    padding: 0 20px;
+}
+.about p {
+    margin-top: 5vh;
+    font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+    .about p {
+        padding: 0 40px;
+        font-size: 28px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .about p {
+        padding: 0 60px;
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .about p {
+        padding: 0 80px;
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .about p {
+        padding: 0 120px;
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .about p {
+        padding: 0 200px;
+        font-size: 36px;
+    }
 }
 /* ################ About Section ################## */
 
 /* ################ Tech & Tools Section ################## */
+.tech_tools {
+    margin-top: 10vh;
+}
 .tech_content {
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
@@ -199,9 +237,6 @@ h2 {
 .tech_content img {
     width: 50px;
     margin: 10px;
-}
-.html_icon {
-    cursor: pointer;
 }
 @media screen and (min-width: 560px) {
     .tech_content {
@@ -219,19 +254,28 @@ h2 {
 /* ################ Tech & Tools Section ################## */
 
 /* ################ Projects Section ################## */
+.project {
+    margin-top: 10vh;
+}
 .project_wrapper {
+    margin-top: 5vh;
     display: grid;
     grid-template-columns: 1fr;
 }
 .cards {
     margin: 20px;
-    border: 2px solid black;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    transition: 0.1s ease-out;
+}
+.cards:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .card_img {
     padding: 20px;
 }
 .card_img img {
     width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.19), 0 10px 12px rgba(0, 0, 0, 0.23);
 }
 .card_element {
     padding: 0 20px 20px;
