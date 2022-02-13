@@ -197,25 +197,21 @@ h2 {
 @media screen and (min-width: 900px) {
     .about p {
         padding: 0 60px;
-        font-size: 32px;
     }
 }
 @media screen and (min-width: 1024px) {
     .about p {
         padding: 0 80px;
-        font-size: 32px;
     }
 }
 @media screen and (min-width: 1280px) {
     .about p {
         padding: 0 120px;
-        font-size: 36px;
     }
 }
 @media screen and (min-width: 1500px) {
     .about p {
         padding: 0 200px;
-        font-size: 36px;
     }
 }
 /* ################ About Section ################## */
