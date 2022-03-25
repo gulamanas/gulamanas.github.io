@@ -214,22 +214,23 @@
     <!-- Contact us -->
     <div class="contact">
         <h2>Contact Us</h2>
-        <form class="form" id="form">
-            <p>Get In Touch</p>
-            <div class="form_container">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Your Email">
-                <input type="text " placeholder="Conatct No.">
-                <textarea name="" id="" placeholder="Your Message Here"></textarea>
-            </div>
-            <input type="submit" class="submit_btn" value="Submit">
-        </form>
+        <div class="form_container">
+            <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="Phone Number" placeholder="Conatct No." required>
+                <textarea placeholder="Your Message Here" name="message"></textarea>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit" class="submit_btn">Submit</button>
+            </form>
+        </div>
     </div>
     <!-- Contact us -->
 
     <!-- Socials -->
     <div class="socials">
-        <a target="_blank" href="https://www.facebook.com/gulamanas/"><i class="fab fa-facebook-f"></i></a>
+        <a target="_blank" href="https://www.facebook.com/gulamanas/"><i class="fab fa-facebook-square"></i></a>
         <a target="_blank" href="https://www.instagram.com/gulamanas/"><i class="fab fa-instagram"></i></a>
         <a target="_blank" href="https://twitter.com/_gulam_anas_"><i class="fab fa-twitter"></i></a>
         <a target="_blank" href="https://www.linkedin.com/in/gulam-anas-79a0b01a1/"><i class="fab fa-linkedin"></i></a>
@@ -238,7 +239,8 @@
 
     <!-- Copyright -->
     <div class="copyright">
-        <p>Made with ❤️ by Gulam Anas Copyright &copy; 2022</p>
+        <p>Made with ❤️ by Gulam Anas </p>
+        </p> Copyright &copy; 2022</p>
     </div>
     <!-- Copyright -->
 
