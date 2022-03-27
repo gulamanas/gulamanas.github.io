@@ -1,9 +1,14 @@
-const burger = document.querySelector('.burger')
-const navItem = document.querySelector('.nav_list')
+const burger = document.querySelector(".burger");
+const navItem = document.querySelector(".nav_list");
 
-burger.addEventListener('click', slideMenu)
+burger.addEventListener("click", slideMenu);
 
 function slideMenu() {
-    navItem.classList.toggle('nav_slider')
-    burger.classList.toggle('switch')
+  navItem.classList.toggle("nav_slider");
+  burger.classList.toggle("switch");
 }
+
+// Get year
+const d = new Date();
+const year = document.getElementById("year");
+year.innerHTML = d.getFullYear();
