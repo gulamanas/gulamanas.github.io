@@ -12,3 +12,9 @@ function slideMenu() {
 const d = new Date();
 const year = document.getElementById("year");
 year.innerHTML = d.getFullYear();
+
+// AOS Animation
+AOS.init({
+  once: true,
+  duration: 600,
+});
