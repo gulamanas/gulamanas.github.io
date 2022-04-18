@@ -320,8 +320,8 @@ h2 {
 }
 .cards {
   margin: 20px;
-  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); */
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(204, 204, 204, 0.6);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -332,6 +332,7 @@ h2 {
 }
 .card_img img {
   width: 100%;
+  border-radius: 8px;
 }
 .card_element {
   padding: 0 20px 20px;
@@ -384,8 +385,10 @@ h2 {
 }
 .form_container {
   margin-top: 5vh;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), 0 6px 10px rgba(0, 0, 0, 0.19),
-    0 8px 18px rgba(0, 0, 0, 0.22);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), 0 6px 10px rgba(0, 0, 0, 0.19),
+    0 8px 18px rgba(0, 0, 0, 0.22); */
+  border: 1px solid rgba(204, 204, 204, 0.6);
+  border-radius: 8px;
 }
 .form {
   display: flex;
