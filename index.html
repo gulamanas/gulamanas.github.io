@@ -1,262 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6edc3acce4.js" crossorigin="anonymous"></script>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6edc3acce4.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Gulam Anas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Nav Bar -->
     <nav class="navigation" data-aos="fade-down">
-        <div class="brand">
-            <a href="/"><img src="./images/ga.png" alt=""></a>
-        </div>
-        <div class="burger">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-        </div>
-        <ul class="nav_list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
+      <div class="brand">
+        <a href="#home"><img src="./images/ga.png" alt="" /></a>
+      </div>
+      <div class="burger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+      <ul class="nav_list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <span
+          ><i id="dayNightButton" class="fas fa-sun" style="cursor: pointer"></i
+        ></span>
+      </ul>
     </nav>
     <!-- Nav Bar -->
 
     <!-- Hero Section -->
     <div class="main" id="home" data-aos="flip-right">
-        <div class="main_content" data-aos="fade-right" data-aos-delay="400">
-            <h1>
-                <span>Hello!</span><br>My Name is <span>Anas</span><br>and I'm a<br><span>Frontend Developer.</span>
-            </h1>
-            <a href="./Gulam_Anas_Resume.pdf" download><button class="btn_primary">Resume</button></a>
-        </div>
-        <div class="profile_pic" data-aos="fade-left" data-aos-delay="600">
-            <img class="profile_pic_img" src="./images/anas-dp.png" alt="">
-        </div>
+      <div class="main_content" data-aos="fade-right" data-aos-delay="400">
+        <h1>
+          <span>Hello!</span><br />My Name is <span>Anas</span><br />and I'm
+          a<br /><span>Frontend Developer.</span>
+        </h1>
+        <a href="./Gulam_Anas_Resume.pdf" download
+          ><button class="btn_primary">Resume</button></a
+        >
+      </div>
+      <div class="profile_pic" data-aos="fade-left" data-aos-delay="600">
+        <img class="profile_pic_img" src="./images/anas-dp.png" alt="" />
+      </div>
     </div>
     <!-- Hero Section -->
 
     <!-- About Section -->
     <div class="about" id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-            Hey, I am <span>Gulam Anas</span>, a frontend developer at <a href="https://mverve.com/">Mobignosis Pvt. Ltd.</a>, a company based in Bengaluru, India. I am interested in learning new technology and am currently learning React and implementing it as well.
-        </p>
+      <h2>About Me</h2>
+      <p>
+        Hey, I am <span>Gulam Anas</span>, a frontend developer at
+        <a href="https://mverve.com/">Mobignosis Pvt. Ltd.</a>, a company based
+        in Bengaluru, India. I am interested in learning new technology and am
+        currently learning React and implementing it as well.
+      </p>
     </div>
     <!-- About Section -->
 
     <!-- Tech & Tools section -->
     <div class="tech_tools" data-aos="fade-up">
-        <h2>Tech & Tools</h2>
-        <div class="tech_container">
-            <div class="tools">
-                <img src="./images/html.png" alt="">
-                <p>HTML</p>
-            </div>
-            <div class="tools">
-                <img src="./images/css.png" alt="">
-                <p>CSS</p>
-            </div>
-            <div class="tools">
-                <img src="./images/js.png" alt="">
-                <p>Javascript</p>
-            </div>
-            <div class="tools">
-                <img src="./images/bootstrap.png" alt="">
-                <p>Bootstrap</p>
-            </div>
-            <div class="tools">
-                <img src="./images/react.png" alt="">
-                <p>React</p>
-            </div>
-            <div class="tools">
-                <img src="./images/sass.png" alt="">
-                <p>SASS</p>
-            </div>
-            <div class="tools">
-                <img src="./images/git.png" alt="">
-                <p>Git</p>
-            </div>
-            <div class="tools">
-                <img src="./images/github.png" alt="">
-                <p>Github</p>
-            </div>
-            <div class="tools">
-                <img src="./images/redux.png" alt="">
-                <p>REDUX</p>
-            </div>
-            <div class="tools">
-                <img src="./images/figma.png" alt="">
-                <p>Figma</p>
-            </div>
-            <div class="tools">
-                <img src="./images/photoshop.png" alt="">
-                <p>Photoshop</p>
-            </div>
-            <div class="tools">
-                <img src="./images/xd.png" alt="">
-                <p>Adobe XD</p>
-            </div>
+      <h2>Tech & Tools</h2>
+      <div class="tech_container">
+        <div class="tools">
+          <img src="./images/html.png" alt="" />
+          <p>HTML</p>
         </div>
+        <div class="tools">
+          <img src="./images/css.png" alt="" />
+          <p>CSS</p>
+        </div>
+        <div class="tools">
+          <img src="./images/js.png" alt="" />
+          <p>Javascript</p>
+        </div>
+        <div class="tools">
+          <img src="./images/bootstrap.png" alt="" />
+          <p>Bootstrap</p>
+        </div>
+        <div class="tools">
+          <img src="./images/react.png" alt="" />
+          <p>React</p>
+        </div>
+        <div class="tools">
+          <img src="./images/sass.png" alt="" />
+          <p>SASS</p>
+        </div>
+        <div class="tools">
+          <img src="./images/git.png" alt="" />
+          <p>Git</p>
+        </div>
+        <div class="tools">
+          <img src="./images/github.png" alt="" />
+          <p>Github</p>
+        </div>
+        <div class="tools">
+          <img src="./images/redux.png" alt="" />
+          <p>REDUX</p>
+        </div>
+        <div class="tools">
+          <img src="./images/figma.png" alt="" />
+          <p>Figma</p>
+        </div>
+        <div class="tools">
+          <img src="./images/photoshop.png" alt="" />
+          <p>Photoshop</p>
+        </div>
+        <div class="tools">
+          <img src="./images/xd.png" alt="" />
+          <p>Adobe XD</p>
+        </div>
+      </div>
     </div>
     <!-- Tech & Tools section -->
 
     <!-- Project section -->
     <div class="project" id="project" data-aos="fade-up">
-        <h2>Projects</h2>
-        <div class="project_wrapper">
-            <div class="cards" data-aos="flip-right" data-aos-delay="400">
-                <div class="card_img">
-                    <img src="./images/fitness.png" alt="">
-                </div>
-                <div class="card_element">
-                    <div class="card_element_heading">
-                        <p>Fitness</p>
-                        <div>
-                            <a target="_blank" href="https://github.com/gulamanas/Fitness-Website.git"><i
-                                    class="fab fa-github"></i></a>
-                            <a target="_blank" href="https://fitnessite.netlify.app"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <p>
-                        A Fitness Landing page to show the details of a gym house and book your appointment
-                    </p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </div>
+      <h2>Projects</h2>
+      <div class="project_wrapper">
+        <div class="cards" data-aos="flip-right" data-aos-delay="400">
+          <div class="card_img">
+            <img src="./images/fitness.png" alt="" />
+          </div>
+          <div class="card_element">
+            <div class="card_element_heading">
+              <p>Fitness</p>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/gulamanas/Fitness-Website.git"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a target="_blank" href="https://fitnessite.netlify.app"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
             </div>
-            <div class="cards" data-aos="flip-right" data-aos-delay="700">
-                <div class="card_img">
-                    <img src="./images/shop-gallery.png" alt="Shop Gallery">
-                </div>
-                <div class="card_element">
-                    <div class="card_element_heading">
-                        <p>Shop Gallery</p>
-                        <div>
-                            <a target="_blank" href="https://github.com/gulamanas/shopGallery-eCommerce"><i
-                                    class="fab fa-github"></i></a>
-                            <a target="_blank" href="https://shopgallery.onrender.com/"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <p>
-                        An eCommerce app for selling electronics items where people can pay for using PayPal as a Payment Gateway.
-                    </p>
-                    <ul>
-                        <li>MERN Stack</li>
-                        <li>BootStrap</li>
-                       <!-- <li>Redux</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MongoDB</li> -->
-                    </ul>
-                </div>
-            </div>
-            <div class="cards" data-aos="flip-right" data-aos-delay="1000">
-                <div class="card_img">
-                    <img src="./images/expense-app.png" alt="Expense Tracker">
-                </div>
-                <div class="card_element">
-                    <div class="card_element_heading">
-                        <p>Expense Tracker</p>
-                        <div>
-                            <a target="_blank" href="https://github.com/gulamanas/Expense-Tracker-React"><i
-                                    class="fab fa-github"></i></a>
-                            <a target="_blank" href="https://expeenso.netlify.app/"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <p>
-                        An Expense Tracker for keeping tracks of all your expense and incomes
-                    </p>
-                    <ul>
-                        <li>React JS</li>
-                        <li>Tailwind CSS</li>
-                        <li>Firebase</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cards" data-aos="flip-right" data-aos-delay="1300">
-                <div class="card_img">
-                    <img src="./images/weather.png" alt="">
-                </div>
-                <div class="card_element">
-                    <div class="card_element_heading">
-                        <p>Weather App</p>
-                        <div>
-                            <a target="_blank" href="https://github.com/gulamanas/ReactWeather.git"><i
-                                    class="fab fa-github"></i></a>
-                            <a target="_blank" href="https://base-weather.netlify.app"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <p>
-                        Weather App to show data using search feature. created this using React Js and Tailwind CSS
-                    </p>
-                    <ul>
-                        <li>React Js</li>
-                        <li>Tailwind CSS</li>
-                    </ul>
-                </div>
-            </div>
+            <p>
+              A Fitness Landing page to show the details of a gym house and book
+              your appointment
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
         </div>
+        <div class="cards" data-aos="flip-right" data-aos-delay="500">
+          <div class="card_img">
+            <img src="./images/shop-gallery.png" alt="Shop Gallery" />
+          </div>
+          <div class="card_element">
+            <div class="card_element_heading">
+              <p>Shop Gallery</p>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/gulamanas/shopGallery-eCommerce"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a target="_blank" href="https://shopgallery.onrender.com/"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <p>
+              An eCommerce app for selling electronics items where people can
+              pay for using PayPal as a Payment Gateway.
+            </p>
+            <ul>
+              <li>MERN Stack</li>
+              <li>BootStrap</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cards" data-aos="flip-right" data-aos-delay="600">
+          <div class="card_img">
+            <img src="./images/expense-app.png" alt="Expense Tracker" />
+          </div>
+          <div class="card_element">
+            <div class="card_element_heading">
+              <p>Expense Tracker</p>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/gulamanas/Expense-Tracker-React"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a target="_blank" href="https://expeenso.netlify.app/"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <p>
+              An Expense Tracker for keeping tracks of all your expense and
+              incomes
+            </p>
+            <ul>
+              <li>React JS</li>
+              <li>Tailwind CSS</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cards" data-aos="flip-right" data-aos-delay="700">
+          <div class="card_img">
+            <img src="./images/weather.png" alt="" />
+          </div>
+          <div class="card_element">
+            <div class="card_element_heading">
+              <p>Weather App</p>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://github.com/gulamanas/ReactWeather.git"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a target="_blank" href="https://base-weather.netlify.app"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <p>
+              Weather App to show data using search feature. created this using
+              React Js and Tailwind CSS
+            </p>
+            <ul>
+              <li>React Js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Project section -->
 
     <!-- Contact us -->
     <div class="contact" id="contact" data-aos="fade-up">
-        <h2>Contact Us</h2>
-        <div class="form_container">
-            <form class="form" id="form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="eb574778-a535-42f7-9be3-38167fa74e93">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="name" placeholder="Conatct No." required>
-                <textarea placeholder="Your Message Here" name="message"></textarea>
-                <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                <button type="submit" class="submit_btn">Submit</button>
-            </form>
-        </div>
+      <h2>Contact Us</h2>
+      <div class="form_container">
+        <form
+          class="form"
+          id="form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="eb574778-a535-42f7-9be3-38167fa74e93"
+          />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="name" placeholder="Conatct No." required />
+          <textarea placeholder="Your Message Here" name="message"></textarea>
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <button type="submit" class="submit_btn">Submit</button>
+        </form>
+      </div>
     </div>
     <!-- Contact us -->
 
     <!-- Socials -->
     <div class="socials">
-        <a target="_blank" href="https://www.facebook.com/gulamanas/"><i class="fab fa-facebook-square"></i></a>
-        <a target="_blank" href="https://www.instagram.com/gulamanas/"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" href="https://twitter.com/_gulam_anas_"><i class="fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/gulam-anas-79a0b01a1/"><i class="fab fa-linkedin"></i></a>
+      <a target="_blank" href="https://www.facebook.com/gulamanas/"
+        ><i class="fab fa-facebook-square"></i
+      ></a>
+      <a target="_blank" href="https://www.instagram.com/gulamanas/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a target="_blank" href="https://twitter.com/_gulam_anas_"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/gulam-anas-79a0b01a1/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
     </div>
     <!-- Socials -->
 
     <!-- Copyright -->
     <div class="copyright">
-        <p>Made with ❤️ by Gulam Anas </p>
-        </p> Copyright &copy; <span id="year">2021</span></p>
+      <p>Made with ❤️ by Gulam Anas</p>
+      <p>Copyright &copy; <span id="year">2021</span></p>
     </div>
     <!-- Copyright -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>

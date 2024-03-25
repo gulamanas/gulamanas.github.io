@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -10,6 +10,14 @@ html {
 :root {
   --dark: #131d32;
   --light: #fff;
+
+  --bg-input: #ebf4f2;
+  --text-span: #0087ca;
+  --text-primary: var(--dark);
+  --bg-color: var(--light);
+}
+body {
+  background-color: var(--bg-color);
 }
 h2 {
   text-align: center;
@@ -17,8 +25,8 @@ h2 {
   letter-spacing: 3px;
   text-shadow: 3px 3px #b6b6b6, 6px 6px #016fa2;
   font-weight: 600;
-  /* color: var(--dark); */
-  color: #444343;
+  color: var(--text-primary);
+  /* color: #444343; */
 }
 @media screen and (min-width: 600px) {
   h2 {
@@ -37,11 +45,12 @@ h2 {
   top: 0;
   left: 0;
   z-index: 10;
-  background: var(--light);
+  background: var(--bg-color);
   border-bottom: 1px solid #c2c2c2;
 }
 .brand img {
   width: 40px;
+  filter: drop-shadow(2px 2px 4px #d3d3d3);
 }
 .brand img:hover {
   cursor: pointer;
@@ -49,19 +58,24 @@ h2 {
 .nav_list {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 .nav_list li {
   padding: 10px 20px;
 }
 .nav_list li a {
   text-decoration: none;
-  color: var(--dark);
+  /* color: var(--dark); */
   font-weight: 600;
   display: inline-block;
   position: relative;
 }
+.nav_list li a,
+.nav_list span i {
+  color: var(--text-primary);
+}
 .nav_list li a:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -86,13 +100,14 @@ h2 {
     transform-origin: top;
     transform: scaleY(0);
     transition: 0.3s;
-    background: var(--light);
+    background: var(--bg-color);
   }
   .nav_list {
     flex-direction: column;
     align-items: center;
   }
-  .nav_list li {
+  .nav_list li,
+  .nav_list span {
     margin: 10px 0;
   }
   .burger {
@@ -106,7 +121,7 @@ h2 {
     width: 30px;
     height: 5px;
     margin: 5px;
-    background: var(--dark);
+    background: var(--text-primary);
     transition: 0.2s;
     border-radius: 20px;
   }
@@ -128,7 +143,7 @@ h2 {
 /* ################ Hero Section ################## */
 .main {
   margin-top: 8vh;
-  background: url(/images/5.jpg);
+  background: url(/images/light_background.jpg);
   object-fit: cover;
   display: flex;
   flex-direction: column;
@@ -140,11 +155,15 @@ h2 {
 .main_content {
   text-align: center;
 }
+.main_content h1 {
+  color: var(--text-primary);
+}
 .main_content h1 span {
-  color: #0087ca;
+  /* color: #3ebfff; */
+  color: var(--text-span);
 }
 .btn_primary {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #117db3;
   padding: 10px 20px;
   margin-top: 2vh;
@@ -195,6 +214,11 @@ h2 {
 .about p {
   margin-top: 5vh;
   font-size: 20px;
+  color: var(--text-primary);
+}
+.about p span {
+  font-weight: 600;
+  font-style: italic;
 }
 @media screen and (min-width: 600px) {
   .about p {
@@ -263,56 +287,56 @@ h2 {
 }
 @media screen and (min-width: 600px) {
   .tech_container {
-      grid-template-columns: 80px 80px 80px 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px;
   }
 }
 @media screen and (min-width: 768px) {
   .tech_container {
-      grid-template-columns: 100px 100px 100px 100px 100px 100px;
-      gap: 1rem;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    gap: 1rem;
   }
   .tools {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
   .tools img {
-      width: 55px;
+    width: 55px;
   }
   .tools p {
-      font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 1096px) {
   .tech_container {
-      grid-template-columns: 120px 120px 120px 120px 120px 120px;
-      gap: 1.2rem;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    gap: 1.2rem;
   }
   .tools {
-      width: 120px;
-      height: 120px;
+    width: 120px;
+    height: 120px;
   }
   .tools img {
-      width: 65px;
+    width: 65px;
   }
   .tools p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 1450px) {
   .tech_container {
-      grid-template-columns: 150px 150px 150px 150px 150px 150px;
-      gap: 1.4rem;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    gap: 1.4rem;
   }
   .tools {
-      width: 150px;
-      height: 150px;
-      border-radius: 6px;
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
   }
   .tools img {
-      width: 80px;
+    width: 80px;
   }
   .tools p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 560px) {
@@ -327,7 +351,8 @@ h2 {
   .tech_content img {
     width: 96px;
   }
-} */
+}
+*/
 /* ################ Tech & Tools Section ################## */
 
 /* ################ Projects Section ################## */
@@ -362,6 +387,11 @@ h2 {
 }
 .card_element {
   padding: 0 20px 20px;
+}
+.card_element a,
+.card_element li,
+.card_element p {
+  color: var(--text-primary);
 }
 .card_element_heading {
   display: flex;
@@ -431,7 +461,8 @@ h2 {
   border: none;
   outline: none;
   border-radius: 6px;
-  background: #ebf4f2;
+  background: var(--bg-input);
+  color: var(--text-primary);
 }
 .form textarea {
   height: 140px;
@@ -515,6 +546,9 @@ h2 {
 .copyright {
   padding: 20px 0;
   text-align: center;
+}
+.copyright p {
+  color: var(--text-primary);
 }
 @media screen and (min-width: 736px) {
   .socials,
