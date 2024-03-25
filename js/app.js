@@ -52,7 +52,7 @@ year.innerHTML = d.getFullYear();
 
 // AOS Animation
 AOS.init({
-  once: true,
+  // once: true,
   duration: 1000,
   disable: 'mobile',
 });
