@@ -15,7 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const root = document.documentElement;
   const mainElement = document.querySelector('.main');
 
-  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  let isDarkMode = localStorage.getItem('darkMode') === 'true';
+  console.log(typeof isDarkMode);
+
+  if (localStorage.getItem('darkMode') === null) {
+    isDarkMode = true;
+    localStorage.setItem('darkMode', 'true');
+  }
 
   function toggleDarkMode(isDark) {
     const bgColor = isDark ? 'var(--dark)' : 'var(--light)';
@@ -39,9 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
   toggleDarkMode(isDarkMode);
 
   dayNightButton.addEventListener('click', function () {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    toggleDarkMode(!isDarkMode);
-    localStorage.setItem('darkMode', !isDarkMode);
+    isDarkMode = !isDarkMode;
+    toggleDarkMode(isDarkMode);
+    localStorage.setItem('darkMode', isDarkMode.toString());
   });
 });
 
