@@ -28,15 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const textPrimary = isDark ? 'var(--light)' : 'var(--dark)';
     const textSpan = isDark ? '#0087ca' : '#3ebfff';
     const bgInput = isDark ? '#343434' : '#ebf4f2';
-    const backgroundImage = isDark
-      ? 'url(/images/dark_background.jpg)'
-      : 'url(/images/light_background.jpg)';
+    const bgInvert = isDark ? 'var(--light)': 'var(--dark)';
 
     root.style.setProperty('--bg-color', bgColor);
     root.style.setProperty('--text-primary', textPrimary);
     root.style.setProperty('--text-span', textSpan);
     root.style.setProperty('--bg-input', bgInput);
-    mainElement.style.background = backgroundImage;
+    root.style.setProperty('--bg-invert', bgInvert);
 
     dayNightButton.classList.toggle('fa-sun', !isDark);
     dayNightButton.classList.toggle('fa-moon', isDark);
